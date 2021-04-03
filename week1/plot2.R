@@ -3,7 +3,7 @@
 # @author Anushka R
 
 # Importing the full dataset 
-data_full <- read.csv("C:/Users/praveen/Desktop/PE_EDA/ExData_Plotting1/household_power_consumption.txt", header=T, sep=';', na.strings="?", nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
+data_full <- read.csv("C:/Users/anushka/Desktop/PE_EDA/ExData_Plotting1/household_power_consumption.txt", header=T, sep=';', na.strings="?", nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 data_full$Date <- as.Date(data_full$Date, format="%d/%m/%Y")
 # Subset the data
 data <- subset(data_full, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
